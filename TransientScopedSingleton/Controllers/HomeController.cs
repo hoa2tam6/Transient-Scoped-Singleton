@@ -34,6 +34,10 @@ namespace TransientScopedSingleton.Controllers
             _singletonService2 = singletonService2;
         }
 
+        /// <summary>
+        /// I commented here 123
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             ViewBag.transient1 = _transientService1.GetOperationID().ToString();
